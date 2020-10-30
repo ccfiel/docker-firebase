@@ -1,5 +1,5 @@
 # Base Image - Node Platform
-FROM node:12.13.0-alpine
+FROM node:10.23-alpine
 
 LABEL maintainer="ccfiel@bai.ph" version="2.0.2"
 
