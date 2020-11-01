@@ -5,6 +5,7 @@ LABEL maintainer="ccfiel@bai.ph" version="2.0.2"
 
 # Install Firebase CLI
 RUN npm install -g firebase-tools
+RUN apk add --nocache lib32stdc++6 lib32z1
 RUN apk update
 RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 RUN python3 -m ensurepip
