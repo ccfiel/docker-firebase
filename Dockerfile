@@ -4,8 +4,8 @@ FROM node:10.23-alpine
 LABEL maintainer="ccfiel@bai.ph" version="2.0.2"
 
 # Install Firebase CLI
-RUN apk update
 RUN npm install -g firebase-tools
+RUN apk update
 RUN apk add --nocache lib32stdc++6 lib32z1
 RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 RUN python3 -m ensurepip
